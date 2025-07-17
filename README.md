@@ -147,7 +147,7 @@ disp(predicted);
 
 Display a different image (open or closed hand) depending on the MAV value of the signal segment.
 
-### 🖼 Required Images:
+###  Required Images:
 
 - `hand_open.png`  
 - `hand_closed.png`  
@@ -185,7 +185,7 @@ end
 
 ---
 
-## 🧾 Summary:
+##  Summary:
 
 -  The EMG signal is generated manually in MATLAB using `sin` and `randn`.  
 -  It is filtered with a bandpass filter between 20–450 Hz.  
