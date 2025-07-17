@@ -1,11 +1,11 @@
-# 📁 MATLAB-Projekt: EMG-Signalverarbeitung, Klassifikation und Steuerung
+#  MATLAB-Projekt: EMG-Signalverarbeitung, Klassifikation und Steuerung
 
-✍️ **Autorin: Ing. Wasan Qusay Hasan (Faiqa)**  
-🌐 [🇬🇧 Englisch](README.md) | [🇸🇦 Arabisch](README_AR.md) | [🇩🇪 Deutsch](README_DE.md)
+ **Autorin: Ing. Wasan Qusay Hasan **  
+ [🇬🇧 Englisch](README.md) | [🇸🇦 Arabisch](README_AR.md) | [🇩🇪 Deutsch](README_DE.md)
 
 ---
 
-## 🎯 Projektidee:
+##  Projektidee:
 
 Dieses Projekt bietet eine vollständige Pipeline zur **Verarbeitung, Analyse und Steuerung** basierend auf EMG-Signalen (Elektromyographie) mit MATLAB.
 
@@ -19,14 +19,14 @@ Es besteht aus drei Hauptphasen:
 
 ---
 
-## ✅ Phase 1: Generierung und Filterung des EMG-Signals
+##  Phase 1: Generierung und Filterung des EMG-Signals
 
-### 🎯 Ziel:
+###  Ziel:
 
 * Simulation eines verrauschten EMG-Signals mit Frequenzanteilen im Bereich 20–450 Hz.  
 * Filterung des Signals mit einem Butterworth-Bandpassfilter.
 
-### 🔢 MATLAB-Code:
+###  MATLAB-Code:
 
 ```matlab
 Fs = 1000; % Abtastfrequenz
@@ -56,9 +56,9 @@ xlabel('Zeit (s)'); ylabel('Amplitude');
 
 ---
 
-## ✅ Phase 2: Diagnose (Klassifikation)
+##  Phase 2: Diagnose (Klassifikation)
 
-### 🎯 Ziel:
+###  Ziel:
 
 Extraktion signifikanter Merkmale aus dem gefilterten Signal und Klassifikation in eine der folgenden Kategorien:
 
@@ -66,13 +66,13 @@ Extraktion signifikanter Merkmale aus dem gefilterten Signal und Klassifikation 
 - **Myopathie**  
 - **Neuropathie**
 
-### 📊 Extrahierte Merkmale:
+###  Extrahierte Merkmale:
 
 - **RMS** (Root Mean Square / Effektivwert)  
 - **MAV** (Mean Absolute Value / Durchschnittlicher Absolutwert)  
 - **WL** (Waveform Length / Wellenformlänge)
 
-### 🔢 Merkmalsextraktion:
+###  Merkmalsextraktion:
 
 ```matlab
 window_size = 200;
@@ -101,7 +101,7 @@ xlabel('Zeit (s)'); ylabel('Merkmalswert');
 
 ---
 
-### 🔢 Klassifikation der EMG-Zustände:
+###  Klassifikation der EMG-Zustände:
 
 ```matlab
 Fs = 1000;
@@ -141,20 +141,20 @@ disp(predicted);
 
 ---
 
-## ✅ Phase 3: Visuelle Steuerung basierend auf Muskelaktivität
+##  Phase 3: Visuelle Steuerung basierend auf Muskelaktivität
 
-### 🎯 Ziel:
+###  Ziel:
 
 Anzeigen eines Bildes (offene/geschlossene Hand), abhängig vom MAV-Wert jedes Signalabschnitts.
 
-### 🖼️ Benötigte Bilder:
+### 🖼 Benötigte Bilder:
 
 - `hand_open.png`  ← offene Hand  
 - `hand_closed.png`  ← geschlossene Hand  
 
 > Diese Bilder müssen sich im selben Ordner wie das Skript befinden.
 
-### 🔢 Steuerungscode:
+###  Steuerungscode:
 
 ```matlab
 Fs = 1000;
@@ -185,12 +185,12 @@ end
 
 ---
 
-## 🧾 Zusammenfassung:
+##  Zusammenfassung:
 
-- ✅ Das EMG-Signal wird manuell mit `sin` und `randn` in MATLAB erzeugt.  
-- ✅ Gefiltert mit einem Bandpassfilter (20–450 Hz).  
-- ✅ Merkmale (RMS, MAV, WL) werden extrahiert und zur Klassifikation genutzt.  
-- ✅ Ein einfaches visuelles Steuersystem wechselt je nach Muskelaktivität das Bild.
+-  Das EMG-Signal wird manuell mit `sin` und `randn` in MATLAB erzeugt.  
+-  Gefiltert mit einem Bandpassfilter (20–450 Hz).  
+-  Merkmale (RMS, MAV, WL) werden extrahiert und zur Klassifikation genutzt.  
+-  Ein einfaches visuelles Steuersystem wechselt je nach Muskelaktivität das Bild.
 
-> 👩‍🔬 **Dieses Projekt wurde vollständig von der biomedizinischen Ingenieurin Wasan Qusay Hasan  mit MATLAB Online entwickelt und dokumentiert.**  
+>  **Dieses Projekt wurde vollständig von der biomedizinischen Ingenieurin Wasan Qusay Hasan  mit MATLAB Online entwickelt und dokumentiert.**  
 > Es dient als Grundlage für Erweiterungen (GUI, Echtzeit, Arduino) oder als akademisches Projekt (z. B. Bachelorarbeit, Trainingsmappe).
