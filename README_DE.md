@@ -182,6 +182,19 @@ for i = 1:num_windows
     pause(0.1);
 end
 ```
+---
+
+## 🖼️ Beispielhafte Steuerungsbilder
+
+Hier sind die Referenzbilder, die als visuelle Rückmeldung für die Muskelaktivität verwendet werden:
+
+### 🔓 Hand offen:
+![Hand offen](hand_open.png)
+
+### 🔒 Hand geschlossen:
+![Hand geschlossen](hand_closed.png)
+
+> ⚠️ Stelle sicher, dass sich die Bilder `hand_open.png` und `hand_closed.png` im **gleichen Verzeichnis** wie die Datei `README_DE.md` befinden.
 
 ---
 
