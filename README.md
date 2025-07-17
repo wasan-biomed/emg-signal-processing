@@ -1,11 +1,11 @@
-# 📁 MATLAB Project: EMG Signal Processing, Classification, and Control
+#  MATLAB Project: EMG Signal Processing, Classification, and Control
 
-✍️ **Author: Eng. Wasan Qusay Hasan**  
-🌐 [🇬🇧 English](README.md) | [🇸🇦 Arabic](README_AR.md) | [🇩🇪 German](README_DE.md)
+ **Author: Eng. Wasan Qusay Hasan**  
+ [🇬🇧 English](README.md) | [🇸🇦 Arabic](README_AR.md) | [🇩🇪 German](README_DE.md)
 
 ---
 
-## 🎯 Project Idea:
+##  Project Idea:
 
 This project presents a complete pipeline for **processing, analyzing, and controlling** based on EMG (Electromyography) signals using MATLAB.
 
@@ -15,18 +15,18 @@ It includes three main stages:
 2. **Feature extraction and diagnosis** of muscular conditions.  
 3. **Muscle-based control** to display images (hand open/closed) depending on activity.
 
-> ⚠️ The EMG signals used are **simulated/generated manually in MATLAB**, not recorded from real hardware.
+> ⚠ The EMG signals used are **simulated/generated manually in MATLAB**, not recorded from real hardware.
 
 ---
 
-## ✅ Stage 1: EMG Signal Generation and Filtering
+##  Stage 1: EMG Signal Generation and Filtering
 
-### 🎯 Goal:
+###  Goal:
 
 * Simulate a noisy EMG signal containing frequency components in the 20–450 Hz range.  
 * Filter the signal using a bandpass Butterworth filter.
 
-### 🔢 MATLAB Code:
+###  MATLAB Code:
 
 ```matlab
 Fs = 1000; % Sampling frequency
@@ -56,9 +56,9 @@ xlabel('Time (s)'); ylabel('Amplitude');
 
 ---
 
-## ✅ Stage 2: Diagnosis (Classification)
+## Stage 2: Diagnosis (Classification)
 
-### 🎯 Goal:
+### Goal:
 
 Extract meaningful features from the filtered signal and classify it into one of three conditions:
 
@@ -66,13 +66,13 @@ Extract meaningful features from the filtered signal and classify it into one of
 - **Myopathy**  
 - **Neuropathy**
 
-### 📊 Extracted Features:
+### Extracted Features:
 
 - **RMS** (Root Mean Square)  
 - **MAV** (Mean Absolute Value)  
 - **WL** (Waveform Length)
 
-### 🔢 Feature Extraction Code:
+###  Feature Extraction Code:
 
 ```matlab
 window_size = 200;
@@ -101,7 +101,7 @@ xlabel('Time (s)'); ylabel('Feature Value');
 
 ---
 
-### 🔢 Simulating & Classifying EMG Conditions:
+###  Simulating & Classifying EMG Conditions:
 
 ```matlab
 Fs = 1000;
@@ -141,20 +141,20 @@ disp(predicted);
 
 ---
 
-## ✅ Stage 3: Muscle-Based Control (Visual)
+##  Stage 3: Muscle-Based Control (Visual)
 
-### 🎯 Goal:
+###  Goal:
 
 Display a different image (open or closed hand) depending on the MAV value of the signal segment.
 
-### 🖼️ Required Images:
+### 🖼 Required Images:
 
 - `hand_open.png`  
 - `hand_closed.png`  
 
 > These images should be placed in the same directory as the script.
 
-### 🔢 Control Code:
+###  Control Code:
 
 ```matlab
 Fs = 1000;
@@ -187,10 +187,10 @@ end
 
 ## 🧾 Summary:
 
-- ✅ The EMG signal is generated manually in MATLAB using `sin` and `randn`.  
-- ✅ It is filtered with a bandpass filter between 20–450 Hz.  
-- ✅ Features (RMS, MAV, WL) are extracted and used to classify simulated cases.  
-- ✅ A visual control system is implemented that reacts to muscle activity by changing images.
+-  The EMG signal is generated manually in MATLAB using `sin` and `randn`.  
+-  It is filtered with a bandpass filter between 20–450 Hz.  
+-  Features (RMS, MAV, WL) are extracted and used to classify simulated cases.  
+-  A visual control system is implemented that reacts to muscle activity by changing images.
 
-> 👩‍🔬 **This project was fully authored, coded, and documented by biomedical engineer Wasan Qusay Hasan using MATLAB Online.**  
+>  **This project was fully authored, coded, and documented by biomedical engineer Wasan Qusay Hasan using MATLAB Online.**  
 > It is intended as a base for further development (GUI, real-time, Arduino interface) or academic use (graduation project, training portfolio).
