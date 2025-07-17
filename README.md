@@ -182,6 +182,19 @@ for i = 1:num_windows
     pause(0.1);
 end
 ```
+---
+
+## 🖼 Example Control Images
+
+These are the reference images used for muscle-based visual feedback.
+
+### 🔓 Hand Open:
+![Hand Open](hand_open.png)
+
+### 🔒 Hand Closed:
+![Hand Closed](hand_closed.png)
+
+> ⚠️ Make sure the images `hand_open.png` and `hand_closed.png` are saved in the **same folder** as the `README.md` file.
 
 ---
 
