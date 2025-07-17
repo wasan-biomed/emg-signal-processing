@@ -147,7 +147,7 @@ disp(predicted);
 
 Anzeigen eines Bildes (offene/geschlossene Hand), abhängig vom MAV-Wert jedes Signalabschnitts.
 
-### 🖼 Benötigte Bilder:
+###  Benötigte Bilder:
 
 - `hand_open.png`  ← offene Hand  
 - `hand_closed.png`  ← geschlossene Hand  
@@ -184,7 +184,7 @@ end
 ```
 ---
 
-## 🖼️ Beispielhafte Steuerungsbilder
+##  Beispielhafte Steuerungsbilder
 
 Hier sind die Referenzbilder, die als visuelle Rückmeldung für die Muskelaktivität verwendet werden:
 
